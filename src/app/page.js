@@ -1,6 +1,6 @@
-import Image from "next/image";
 import styles from "./page.module.css";
 import Link from "next/link";
+import Map from "../components/map";
 
 export default function Home() {
   return (
@@ -13,6 +13,7 @@ export default function Home() {
         <Link href="/pointsofinterest">Points of Interest </Link>
 
       </div>
+      <Map />
     </main>
   );
 }
