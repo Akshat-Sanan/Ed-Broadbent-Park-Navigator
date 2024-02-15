@@ -9,7 +9,7 @@ export default function Home() {
 
         <Link href="/info">Info </Link>
         <Link href="/booking">Booking </Link>
-        <Link href="/ar">AR </Link>
+        <Link href="/ar">A </Link>
         <Link href="/pointsofinterest">Points of Interest </Link>
 
       </div>
