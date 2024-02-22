@@ -5,9 +5,10 @@ import styles from './ImageSlider.module.css';
 
 const ImageSlider = () => {
   const images = [
-    'https://via.placeholder.com/321x188/808080',
-    'https://via.placeholder.com/321x188/000000',
-    'https://via.placeholder.com/321x188/808080',
+    './assets/image1.png',
+    './assets/image2.png',
+    './assets/image3.png'
+    
  
   ];
 
