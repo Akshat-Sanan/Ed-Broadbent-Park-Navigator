@@ -11,6 +11,7 @@ export default function Home() {
         <Link href="/booking">Booking </Link>
         <Link href="/ar">AR </Link>
         <Link href="/pointsofinterest">Points of Interest </Link>
+        <Link href="/ui">Slider </Link>
 
       </div>
     </main>
