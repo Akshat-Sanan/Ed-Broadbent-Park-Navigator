@@ -5,9 +5,9 @@ import styles from './ImageSlider.module.css';
 
 const ImageSlider = () => {
   const images = [
-    './assets/image1.png',
-    './assets/image2.png',
-    './assets/image3.png'
+    '../assets/image1.png',
+    '../assets/image2.png',
+    '../assets/image3.png'
     
  
   ];
