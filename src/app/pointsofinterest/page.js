@@ -15,7 +15,6 @@ export default function Page() {
       <main className={styles.main}>
         <Header></Header>
         <Content></Content>
-        <ButtonBook onClick={() => console.log('Button clicked!')}></ButtonBook>
         <NavFooter></NavFooter>
       </main>
     </>
