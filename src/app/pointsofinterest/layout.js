@@ -12,7 +12,7 @@ export default function POILayout({
 						<Image src='/back.svg' width={28} height={28} />
 					</Link>
 				</button>
-
+				<h1>Points of Interest</h1>
 				<Image src='/logo.png' alt='logo' width={51.76} height={61} />
 			</header>
 

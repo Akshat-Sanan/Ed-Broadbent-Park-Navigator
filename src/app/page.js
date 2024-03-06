@@ -16,16 +16,17 @@ export default function Home() {
 			/>
 
 			<section className='menu'>
-				<button className='btn poi'>
-					<Link href='/pointsofinterest'>
+				<Link href='/pointsofinterest' className=''>
+					<button className='btn orange'>
 						<Image src='/point_of_interest.svg' alt='logo' width={50} height={50} />
-					</Link>
-				</button>
-				<button className='btn sos'>
-					<Link href='/sos'>
-						<Image src='/sos.svg' alt='logo' width={50} height={50} />
-					</Link>
-				</button>
+					</button>
+				</Link>
+
+				<Link href='/sos'>
+					<button className='btn orange'>
+						<Image src='/info.svg' alt='logo' width={50} height={50} />
+					</button>
+				</Link>
 			</section>
 		</main>
 	);

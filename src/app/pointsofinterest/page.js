@@ -5,6 +5,10 @@ export default function Page() {
 	return (
 		<ul className='pointsOfInterest'>
 			<li className='pointsOfInterest'>
+				<Image src='/ed.png' width={643} height={300} />
+				<p>ED BROADBENT </p>
+			</li>
+			<li className='pointsOfInterest'>
 				<Image src='/humanrights.png' width={643} height={300} />
 				<p>GARDEN OF HUMAN RIGHTS</p>
 			</li>
