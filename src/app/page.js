@@ -1,18 +1,33 @@
-import Image from "next/image";
 import styles from "./page.module.css";
 import Link from "next/link";
+import Map from "../components/map";
+import Image from "next/image";
 
 export default function Home() {
-  return (
-    <main className={styles.main}>
-      <div className={styles.description}>
+	return (
+		<main className=''>
+			<Map />
+			<Image
+				className='mainLogo'
+				src='/logo.png'
+				alt='logo'
+				width={51.76}
+				height={61}
+			/>
 
-        <Link href="/info">Info </Link>
-        <Link href="/booking">Booking </Link>
-        <Link href="/ar">AR </Link>
-        <Link href="/pointsofinterest">Points of Interest </Link>
+			<section className='menu'>
+				<Link href='/pointsofinterest' className=''>
+					<button className='btn orange'>
+						<Image src='/point_of_interest.svg' alt='logo' width={50} height={50} />
+					</button>
+				</Link>
 
-      </div>
-    </main>
-  );
+				<Link href='/sos'>
+					<button className='btn orange'>
+						<Image src='/info.svg' alt='logo' width={50} height={50} />
+					</button>
+				</Link>
+			</section>
+		</main>
+	);
 }
