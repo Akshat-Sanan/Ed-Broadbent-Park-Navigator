@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './components.module.css';
+import styles from './poiFooterButton.module.css';
 
 const Button = ({ imgSrc, link }) => {
     return (
