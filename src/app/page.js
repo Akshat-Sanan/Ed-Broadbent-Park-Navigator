@@ -14,7 +14,7 @@ export default function Home() {
 				width={51.76}
 				height={61}
 			/>
-
+          
 			<section className='menu'>
 				<Link href='/pointsofinterest' className=''>
 					<button className='btn orange'>
