@@ -1,5 +1,4 @@
 "use client";
-import React from 'react';
 import Button from '../PoiFooterButton/PoiFooterButton';
 import styles from './poiFooter.module.css';
 

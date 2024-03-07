@@ -2,10 +2,10 @@
 import Link from 'next/link';
 import styles from './poiHeader.module.css';
 
-export default function PoiHeader(){
+export default function PoiHeader({onClick}){
     return (
         <header className={styles.header}>
-            <Link className={styles.back_btn} href={"../"}>
+            <Link className={styles.back_btn} href={onClick ? undefined : "../"} onClick={onClick} >
                 <img src='./assets/back_btn_icon.svg' />
             </Link>
             <Link className={styles.logo} href={"/"}>
