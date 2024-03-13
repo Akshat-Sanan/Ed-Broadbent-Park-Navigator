@@ -3,24 +3,38 @@ import Link from "next/link";
 
 export default function Page() {
 	return (
-		<ul className='pointsOfInterest'>
-			<li className='pointsOfInterest'>
-				<Image src='/ed.png' width={643} height={300} />
-				<p>ED BROADBENT </p>
-			</li>
-			<li className='pointsOfInterest'>
-				<Image src='/humanrights.png' width={643} height={300} />
-				<p>GARDEN OF HUMAN RIGHTS</p>
-			</li>
-			<li className='pointsOfInterest'>
-				<Image src='/amp.png' width={643} height={300} />
-				<p>AMPHITHEATRE</p>
-			</li>
+		<>
+			<ul className='pointsOfInterest'>
 
-			<li className='pointsOfInterest'>
-				<Image src='/indigenous.png' width={643} height={300} />
-				<p>INDIGENOUS GARDEN</p>
-			</li>
-		</ul>
+				<Link href='/pointsofinterest/edBroadBent'>
+					<li className='pointsOfInterest'>
+						<Image src='/ed.png' width={643} height={300} />
+						<p>ED BROADBENT </p>
+					</li>
+				</Link>
+
+				<Link href='/pointsofinterest/gardenOfHumanRights'>
+					<li className='pointsOfInterest'>
+						<Image src='/humanrights.png' width={643} height={300} />
+						<p>GARDEN OF HUMAN RIGHTS</p>
+					</li>
+				</Link>
+
+				<Link href='/pointsofinterest/amphitheather'>
+					<li className='pointsOfInterest'>
+						<Image src='/amp.png' width={643} height={300} />
+						<p>AMPHITHEATRE</p>
+					</li>
+				</Link>
+
+				<Link href='/pointsofinterest/indigenousGarden'>
+					<li className='pointsOfInterest'>
+						<Image src='/indigenous.png' width={643} height={300} />
+						<p>INDIGENOUS GARDEN</p>
+					</li>
+				</Link>
+			</ul >
+		</>
+
 	);
 }
