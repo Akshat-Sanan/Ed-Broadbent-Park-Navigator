@@ -4,9 +4,9 @@ import SliderGallery from './SliderGallery';
 
 const Page = () => {
     return (
-        <div >
+        <div  >
 
-            <h1>SliderGallery</h1>
+            {/* <h1>SliderGallery</h1> <br></br> */}
             <SliderGallery />
         </div>
     );
