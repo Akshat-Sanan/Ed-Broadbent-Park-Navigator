@@ -1,13 +1,13 @@
 // UI/Page.js
 import React from 'react';
-import SliderGallery from './SliderGallery';
+import Gallery from './Gallery';
 
 const Page = () => {
     return (
         <div  >
 
             {/* <h1>SliderGallery</h1> <br></br> */}
-            <SliderGallery />
+            <Gallery />
         </div>
     );
 }

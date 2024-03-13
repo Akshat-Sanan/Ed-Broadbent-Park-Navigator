@@ -8,14 +8,13 @@
 "use client";
 import React from 'react';
 import { useState } from 'react';
-import styles from './SliderGallery.module.css';
+import styles from './Gallery.module.css';
 import PoiHeader from '../PoiHeader/PoiHeader';
 
 
 
-export default function SliderGallery(header) {
+export default function Gallery({header = "Example"}) {
     const images = [
-
         "../assets/bookImage.png",
         "../humanrights.png",
         "../indigenous.png",
@@ -29,30 +28,35 @@ export default function SliderGallery(header) {
 
     const imagesPerScreen = 6;
 
-    const handleClickImage = (image) => {
+    function handleClickImage(image) {
         setSelectedImage(image);
         setIsFullScreen(true);
     };
 
-    const handleBackClick = () => {
+    function handleBackClick() {
         setIsFullScreen(false);
     };
 
-    function content(header="title") {
-        if (isFullScreen) {
-            return (
+    return (
+     
+        <div className={styles.container}>
+            <PoiHeader 
+                title=" Gallery" 
+                path={isFullScreen ? undefined : "pointsofinterest"} 
+                onBackClick={isFullScreen ? handleBackClick : undefined} 
+            />
+            {isFullScreen ? (
                 <div className={styles.imageContainer}>
                     <img className={styles.image} src={selectedImage} alt="description" />
                 </div>
-            );
-        } else {
-            return (
+            ) : (
                 <>
-                    <div className={styles.galleryTitle}>{`${header} gallery`}</div> 
+                    <div className={styles.galleryTitle}>{`${header} gallery`}</div>
                     <br />
                     <div className={styles.imagesContainer}>
                         {images.slice(0, imagesPerScreen).map((image, index) => (
-                            <img className={styles.thumbnail}
+                            <img 
+                                className={styles.thumbnail}
                                 key={index}
                                 src={image}
                                 alt={`Thumbnail ${index + 1}`}
@@ -61,20 +65,8 @@ export default function SliderGallery(header) {
                         ))}
                     </div>
                 </>
-            );
-        }
-    }
-
-
-    return (
-        <div className={styles.container}>
-            <PoiHeader
-                title="Point of  Gallery"
-                path={isFullScreen ? undefined : "pointsofinterest"}
-                onBackClick={isFullScreen ? handleBackClick : undefined}
-            />
-            {content()}
+            )}
         </div>
+       
     );
-};
-
+}
