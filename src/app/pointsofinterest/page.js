@@ -10,7 +10,7 @@ export default function Page() {
     <>
       <main className={styles.main}>
         <PoiHeader></PoiHeader>
-        <InformationSect/>
+        <InformationSect />
         <PoiFooter />
       </main>
     </>
