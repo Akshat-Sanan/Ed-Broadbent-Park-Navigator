@@ -4,6 +4,7 @@
     display: flex;
     padding-left: 25px;
     padding-right: 25px;
+    margin-top: 20px;
     justify-content: space-between;
     align-items: stretch;
     /* background-color: rgba(255, 122, 0, 1); */

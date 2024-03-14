@@ -3,7 +3,7 @@
 import Image from "next/image";
 import { TransformWrapper, TransformComponent } from "react-zoom-pan-pinch";
 
-// https://bettertyped.github.io/react-zoom-pan-pinch/?path=/story/docs-introduction
+//https://bettertyped.github.io/react-zoom-pan-pinch/?path=/story/docs-introduction
 const Map = () => {
 	return (
 		<section className='mapWrapper'>
