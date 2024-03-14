@@ -1,7 +1,6 @@
 "use client";
-import React from "react";
-import Button from "../PoiFooterButton/PoiFooterButton";
-import styles from "./poiFooter.module.css";
+import Button from '../PoiFooterButton/PoiFooterButton';
+import styles from './poiFooter.module.css';
 
 export default function PoiFooter({ hasGallery }) {
   return (

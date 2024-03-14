@@ -1,6 +1,6 @@
 import styles from "./page.module.css";
 import Link from "next/link";
-import Map from "../components/map";
+import Map from "./ui/Map/Map";
 import Image from "next/image";
 
 export default function Home() {
@@ -14,7 +14,7 @@ export default function Home() {
 				width={51.76}
 				height={61}
 			/>
-          
+
 			<section className='menu'>
 				<Link href='/pointsofinterest' className=''>
 					<button className='btn orange'>
