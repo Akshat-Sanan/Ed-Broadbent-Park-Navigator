@@ -1,11 +1,12 @@
 import Image from "next/image";
 import Link from "next/link";
+import PoiHeader from "../ui/PoiHeader/PoiHeader";
 
 export default function Page() {
 	return (
 		<>
+			<PoiHeader title="Points of Interest"></PoiHeader>
 			<ul className='pointsOfInterest'>
-
 				<Link href='/pointsofinterest/edBroadBent'>
 					<li className='pointsOfInterest'>
 						<Image src='/ed.png' width={643} height={300} />
@@ -35,6 +36,5 @@ export default function Page() {
 				</Link>
 			</ul >
 		</>
-
 	);
 }

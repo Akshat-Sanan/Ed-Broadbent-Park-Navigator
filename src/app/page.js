@@ -22,7 +22,7 @@ export default function Home() {
 					</button>
 				</Link>
 
-				<Link href='/sos'>
+				<Link href='/info'>
 					<button className='btn orange'>
 						<Image src='/info.svg' alt='logo' width={50} height={50} />
 					</button>
