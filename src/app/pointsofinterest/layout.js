@@ -1,22 +1,11 @@
-import Link from "next/link";
-import Image from "next/image";
+import PoiHeader from "../ui/PoiHeader/PoiHeader";
+import styles from "./page.module.css"
 
-export default function POILayout({
-	children, // will be a page or nested layout
-}) {
-	return (
-		<main>
-			<header className='header'>
-				<button className='btn'>
-					<Link href='/'>
-						<Image src='/back.svg' width={28} height={28} />
-					</Link>
-				</button>
-				<h1>Points of Interest</h1>
-				<Image src='/logo.png' alt='logo' width={51.76} height={61} />
-			</header>
-
-			{children}
-		</main>
-	);
+export default function PoiLayout({ children }) {
+    return (
+        <main className={styles.main}>
+            <PoiHeader></PoiHeader>
+            {children}
+        </main>
+    );
 }
