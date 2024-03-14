@@ -4,7 +4,6 @@ import InformationSect from "@/app/ui/InformationSect/InformationSect";
 import PoiFooter from "@/app/ui/PoiFooter/PoiFooter";
 import PoiSlide from "@/app/ui/PoiSlide/PoiSlide";
 import SliderButtons from "@/app/ui/SliderButtons/SliderButtons";
-import styles from '../page.module.css';
 
 
 export default function edBroadBentPage() {
@@ -51,7 +50,7 @@ export default function edBroadBentPage() {
                 <InformationSect header={'ED BROADBENT'} body={images[currentIndex].body} audioSrc={images[currentIndex].audioSrc} />
             </PoiSlide>
             <SliderButtons currentIndex={currentIndex} setCurrentIndex={setCurrentIndex} images={images} />
-            <PoiFooter hasGallery />
+            <PoiFooter hasGallery galleryLink={"./edBroadBent/gallery"}/>
         </>
     );
 }

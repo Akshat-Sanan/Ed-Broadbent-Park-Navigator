@@ -15,12 +15,12 @@ import PoiHeader from '../PoiHeader/PoiHeader';
 
 export default function Gallery({header = "Example"}) {
     const images = [
-        "../assets/bookImage.png",
-        "../humanrights.png",
-        "../indigenous.png",
-        "../assets/image1.png",
-        "../assets/image2.png",
-        "../assets/image3.png"
+        "/assets/bookImage.png",
+        "/humanrights.png",
+        "/indigenous.png",
+        "/assets/image1.png",
+        "/assets/image2.png",
+        "/assets/image3.png"
     ];
 
     const [selectedImage, setSelectedImage] = useState(images[0]);
@@ -38,11 +38,10 @@ export default function Gallery({header = "Example"}) {
     };
 
     return (
-     
         <div className={styles.container}>
             <PoiHeader 
                 title=" Gallery" 
-                path={isFullScreen ? undefined : "pointsofinterest"} 
+                path={isFullScreen ? undefined : "/edBroadBent"} 
                 onBackClick={isFullScreen ? handleBackClick : undefined} 
             />
             {isFullScreen ? (

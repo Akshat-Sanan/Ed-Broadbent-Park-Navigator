@@ -10,6 +10,10 @@
     margin-bottom: 10px;
 }
 
+.title{
+    text-align: center;
+    font-size: clamp(1.5rem, 4cqi, 2.5rem);
+}
 
 .logo img {
     width: clamp(47px, 8vw, 141px);

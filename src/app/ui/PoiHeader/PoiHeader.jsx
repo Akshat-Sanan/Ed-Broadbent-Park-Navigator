@@ -14,7 +14,7 @@ export default function PoiHeader({ path="", onBackClick, title}) {
           <img src="/assets/back_btn_icon.svg" />
         </Link>
       )}
-      {title ? <h1>{title}</h1> : undefined}
+      {title ? <h1 className={styles.title}>{title}</h1> : undefined}
       <Link className={styles.logo} href={"/"}>
         <img src="/assets/bpn_logo.svg" width={47} height={57} />
       </Link>
