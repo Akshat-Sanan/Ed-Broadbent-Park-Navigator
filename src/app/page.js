@@ -9,12 +9,12 @@ export default function Home() {
 			<Map />
 			<Image
 				className='mainLogo'
-				src='/logo.png'
+				src='/assets/header_logo.svg'
 				alt='logo'
 				width={51.76}
 				height={61}
 			/>
-          
+
 			<section className='menu'>
 				<Link href='/pointsofinterest' className=''>
 					<button className='btn orange'>

@@ -9,7 +9,7 @@
     width: 100%;
 
 
-    padding: 10px 25px 0px 25px;
+    padding: 20px 20px 0px 20px;
     /* background-color: aquamarine; */
     margin-bottom: 10px;
 }
@@ -24,7 +24,8 @@
     width: clamp(30px, 8vw, 90px);
     height: auto;
     aspect-ratio: 1/1;
-    background-color: #4d4d4d43;
+    background-color: #DE6900;
+
     /* color: black; */
     display: flex;
     justify-content: center;

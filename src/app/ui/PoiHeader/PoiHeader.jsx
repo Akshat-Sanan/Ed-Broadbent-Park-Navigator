@@ -9,7 +9,7 @@ export default function PoiHeader() {
         <img src="/assets/back_btn_icon.svg" />
       </Link>
       <Link className={styles.logo} href={"/"}>
-        <img src="/assets/bpn_logo.svg" width={47} height={57} />
+        <img src="/assets/header_logo.svg" width={47} height={57} />
       </Link>
     </header>
   );

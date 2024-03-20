@@ -4,6 +4,8 @@ import InformationSect from "@/app/ui/InformationSect/InformationSect";
 import PoiFooter from "@/app/ui/PoiFooter/PoiFooter";
 import PoiSlide from "@/app/ui/PoiSlide/PoiSlide";
 import SliderButtons from "@/app/ui/SliderButtons/SliderButtons";
+import SliderDots from "@/app/ui/SliderDots/SliderDots";
+
 import styles from '../page.module.css';
 
 
@@ -25,6 +27,7 @@ export default function indigenousGardenPage() {
         <>
             <PoiSlide imgSrc={images[currentIndex].src} imgAlt={images[currentIndex].alt}>
                 <InformationSect header={'INDIGENOUS GARDEN'} body={images[currentIndex].body} audioSrc={images[currentIndex].audioSrc} />
+                <SliderDots total={images.length} currentIndex={currentIndex} />
             </PoiSlide>
             <SliderButtons currentIndex={currentIndex} setCurrentIndex={setCurrentIndex} images={images} />
             <PoiFooter hasGallery />
