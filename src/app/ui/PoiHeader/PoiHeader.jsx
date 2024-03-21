@@ -16,7 +16,7 @@ export default function PoiHeader({ path="", onBackClick, title}) {
       )}
       {title ? <h1 className={styles.title}>{title}</h1> : undefined}
       <Link className={styles.logo} href={"/"}>
-        <img src="/assets/bpn_logo.svg" width={47} height={57} />
+        <img src="/assets/header_logo.svg" width={47} height={57} />
       </Link>
     </header>
   );
