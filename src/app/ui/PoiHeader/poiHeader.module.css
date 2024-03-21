@@ -3,17 +3,17 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
-
-
     padding: 20px 20px 0px 20px;
+
     /* background-color: aquamarine; */
     margin-bottom: 10px;
 }
 
+.title{
+    text-align: center;
+    font-size: clamp(1.5rem, 4cqi, 2.5rem);
+}
 
 .logo img {
     width: clamp(47px, 8vw, 141px);

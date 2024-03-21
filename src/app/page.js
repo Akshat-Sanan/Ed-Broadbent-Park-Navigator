@@ -1,6 +1,6 @@
 import styles from "./page.module.css";
 import Link from "next/link";
-import Map from "../components/map";
+import Map from "./ui/Map/Map";
 import Image from "next/image";
 
 export default function Home() {
@@ -22,7 +22,7 @@ export default function Home() {
 					</button>
 				</Link>
 
-				<Link href='/sos'>
+				<Link href='/info'>
 					<button className='btn orange'>
 						<Image src='/info.svg' alt='logo' width={50} height={50} />
 					</button>

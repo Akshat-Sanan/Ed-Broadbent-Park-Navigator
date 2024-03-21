@@ -1,0 +1,77 @@
+
+.container {
+
+    /* Custom Properties */
+    --background: #FFFFFF;
+    --orange: #FF7A00;
+    --nonActive:#A5A5A5;
+    --defaultText: #000;
+    --buttonText: #fff;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    max-width: 380px;
+    font-size: 16px;
+    color: var(--defaultText);
+    background-color: var(--background);
+}
+
+
+/* Image Container */
+.imageContainer {
+    width: 100%;
+    min-height: 465px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* background-color: tomato; */
+    
+}
+
+.image {
+    width: 100%;
+    height: auto;
+    max-height: 380px;
+}
+
+.galleryTitle {
+    font-size: 16px;
+    font-weight: 700;
+    line-height:21.79px;
+    text-transform: uppercase;
+}
+/* Content Container */
+.contentContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    /* padding: 1rem 0; */
+    border: none;
+}
+
+/* Images Container */
+.imagesContainer {
+    width: 100%;
+    min-height: 465px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* gap: 1rem; */
+}
+
+.thumbnail {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    object-fit: cover;
+}
+
+.imagesContainer img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

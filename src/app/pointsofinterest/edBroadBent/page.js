@@ -8,6 +8,7 @@ import SliderDots from "@/app/ui/SliderDots/SliderDots";
 import styles from '../page.module.css';
 
 
+
 export default function edBroadBentPage() {
 
     const images = [

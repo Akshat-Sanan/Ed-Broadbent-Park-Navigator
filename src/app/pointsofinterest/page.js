@@ -6,7 +6,6 @@ export default function Page() {
 	return (
 		<>
 			<ul className={styles.pointsOfInterest}>
-
 				<Link href='/pointsofinterest/edBroadBent'>
 					<li className={`${styles.pointOfInterest} ${styles.first}`}>
 						<p>ED BROADBENT </p>
@@ -32,6 +31,5 @@ export default function Page() {
 				</Link>
 			</ul >
 		</>
-
 	);
 }
