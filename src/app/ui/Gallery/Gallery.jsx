@@ -10,18 +10,20 @@ import React from 'react';
 import { useState } from 'react';
 import styles from './Gallery.module.css';
 import PoiHeader from '../PoiHeader/PoiHeader';
+import PoiFooter from '../PoiFooter/PoiFooter';
 
 
 
-export default function Gallery({header = "Example"}) {
-    const images = [
+export default function Gallery({header = "Example", images = [],backPath = "/edBroadBent"}) {
+     
+    images=[
         "/assets/bookImage.png",
         "/humanrights.png",
         "/indigenous.png",
         "/assets/image1.png",
         "/assets/image2.png",
         "/assets/image3.png"
-    ];
+    ]
 
     const [selectedImage, setSelectedImage] = useState(images[0]);
     const [isFullScreen, setIsFullScreen] = useState(false);
@@ -39,15 +41,20 @@ export default function Gallery({header = "Example"}) {
 
     return (
         <div className={styles.container}>
+             
             <PoiHeader 
-                title=" Gallery" 
-                path={isFullScreen ? undefined : "/edBroadBent"} 
+                // title=" Gallery" 
+                path={isFullScreen ? undefined : backPath} 
                 onBackClick={isFullScreen ? handleBackClick : undefined} 
             />
             {isFullScreen ? (
+                 <>
+                <div className={styles.galleryTitle}>{`${header} gallery`}</div>
+                <br />
                 <div className={styles.imageContainer}>
                     <img className={styles.image} src={selectedImage} alt="description" />
                 </div>
+                </>
             ) : (
                 <>
                     <div className={styles.galleryTitle}>{`${header} gallery`}</div>
@@ -65,6 +72,8 @@ export default function Gallery({header = "Example"}) {
                     </div>
                 </>
             )}
+            <PoiFooter/>
+           
         </div>
        
     );
