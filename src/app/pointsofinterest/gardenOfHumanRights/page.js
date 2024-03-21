@@ -38,9 +38,8 @@ export default function HumanRightsPage() {
 
     return (
         <>
-            <PoiSlide imgSrc={images[currentIndex].src} imgAlt={images[currentIndex].alt}>
+            <PoiSlide imgSrc={images[currentIndex].src} imgAlt={images[currentIndex].altm} dotsLength={images.length} dotsIndex={currentIndex}>
                 <InformationSect header={'GARDEN OF HUMAN RIGHTS'} body={images[currentIndex].body} audioSrc={images[currentIndex].audioSrc} />
-                <SliderDots total={images.length} currentIndex={currentIndex} />
             </PoiSlide>
             <SliderButtons currentIndex={currentIndex} setCurrentIndex={setCurrentIndex} images={images} />
             <PoiFooter hasGallery />

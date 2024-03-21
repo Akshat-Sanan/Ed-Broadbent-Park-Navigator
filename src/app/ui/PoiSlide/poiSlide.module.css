@@ -1,7 +1,10 @@
 .article img {
     width: 100%;
+    position: relative;
+}
 
-    /* position: relative; */
+.topWrapper{
+    position: relative;
 }
 
 .article {
