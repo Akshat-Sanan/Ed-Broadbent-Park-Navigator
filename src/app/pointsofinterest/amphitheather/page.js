@@ -4,7 +4,6 @@ import InformationSect from "@/app/ui/InformationSect/InformationSect";
 import PoiFooter from "@/app/ui/PoiFooter/PoiFooter";
 import PoiSlide from "@/app/ui/PoiSlide/PoiSlide";
 import SliderButtons from "@/app/ui/SliderButtons/SliderButtons";
-import SliderDots from "@/app/ui/SliderDots/SliderDots";
 import styles from '../page.module.css';
 
 
@@ -30,9 +29,8 @@ export default function AmphitheaterPage() {
 
     return (
         <>
-            <PoiSlide className={styles.slide} imgSrc={images[currentIndex].src} imgAlt={images[currentIndex].alt}>
+            <PoiSlide className={styles.slide} imgSrc={images[currentIndex].src} imgAlt={images[currentIndex].alt} dotsIndex={currentIndex} dotsLength={images.length}>
                 <InformationSect header={'AMPHITHEATER'} body={images[currentIndex].body} audioSrc={images[currentIndex].audioSrc} />
-                <SliderDots className={styles.slider_dots} total={images.length} currentIndex={currentIndex} />
             </PoiSlide>
             <SliderButtons currentIndex={currentIndex} setCurrentIndex={setCurrentIndex} images={images} />
             <PoiFooter hasGallery />

@@ -49,9 +49,8 @@ export default function edBroadBentPage() {
 
     return (
         <>
-            <PoiSlide imgSrc={images[currentIndex].src} imgAlt={images[currentIndex].alt}>
+            <PoiSlide imgSrc={images[currentIndex].src} imgAlt={images[currentIndex].alt} dotsIndex={currentIndex} dotsLength={images.length}>
                 <InformationSect header={'ED BROADBENT'} body={images[currentIndex].body} audioSrc={images[currentIndex].audioSrc} />
-                <SliderDots total={images.length} currentIndex={currentIndex} />
             </PoiSlide>
             <SliderButtons currentIndex={currentIndex} setCurrentIndex={setCurrentIndex} images={images} />
             <PoiFooter hasGallery={true} galleryLink={"./gallery"}/>

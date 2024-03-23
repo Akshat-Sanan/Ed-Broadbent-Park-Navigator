@@ -14,8 +14,7 @@ import PoiFooter from '../PoiFooter/PoiFooter';
 
 
 
-export default function Gallery({header = "Example", images = [],backPath = "/edBroadBent"}) {
-     
+export default function Gallery({header = "Example", images = [], backPath = "/edBroadBent"}) {
     images=[
         "/assets/bookImage.png",
         "/humanrights.png",
@@ -41,14 +40,13 @@ export default function Gallery({header = "Example", images = [],backPath = "/ed
 
     return (
         <div className={styles.container}>
-             
             <PoiHeader 
                 // title=" Gallery" 
                 path={isFullScreen ? undefined : backPath} 
                 onBackClick={isFullScreen ? handleBackClick : undefined} 
             />
             {isFullScreen ? (
-                 <>
+                <>
                 <div className={styles.galleryTitle}>{`${header} gallery`}</div>
                 <br />
                 <div className={styles.imageContainer}>
@@ -73,8 +71,6 @@ export default function Gallery({header = "Example", images = [],backPath = "/ed
                 </>
             )}
             <PoiFooter/>
-           
         </div>
-       
     );
 }
