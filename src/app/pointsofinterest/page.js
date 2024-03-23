@@ -1,10 +1,12 @@
 import Image from "next/image";
 import Link from "next/link";
 import styles from "./page.module.css";
+import PoiHeader from "../ui/PoiHeader/PoiHeader";
 
 export default function Page() {
 	return (
 		<>
+			<PoiHeader />
 			<ul className={styles.pointsOfInterest}>
 				<Link href='/pointsofinterest/edBroadBent'>
 					<li className={`${styles.pointOfInterest} ${styles.first}`}>

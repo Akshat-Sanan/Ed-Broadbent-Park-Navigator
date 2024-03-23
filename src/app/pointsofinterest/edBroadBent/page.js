@@ -54,7 +54,7 @@ export default function edBroadBentPage() {
                 <SliderDots total={images.length} currentIndex={currentIndex} />
             </PoiSlide>
             <SliderButtons currentIndex={currentIndex} setCurrentIndex={setCurrentIndex} images={images} />
-            <PoiFooter />
+            <PoiFooter hasGallery={true} galleryLink={"./gallery"}/>
         </>
     );
 }
