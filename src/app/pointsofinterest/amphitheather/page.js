@@ -29,7 +29,7 @@ export default function AmphitheaterPage() {
 
     return (
         <>
-            <PoiSlide imgSrc={images[currentIndex].src} imgAlt={images[currentIndex].alt}>
+            <PoiSlide className={styles.slide} imgSrc={images[currentIndex].src} imgAlt={images[currentIndex].alt} dotsIndex={currentIndex} dotsLength={images.length}>
                 <InformationSect header={'AMPHITHEATER'} body={images[currentIndex].body} audioSrc={images[currentIndex].audioSrc} />
             </PoiSlide>
             <SliderButtons currentIndex={currentIndex} setCurrentIndex={setCurrentIndex} images={images} />

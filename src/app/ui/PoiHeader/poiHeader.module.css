@@ -1,31 +1,31 @@
 .header {
-    /* background-color: aqua; */
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
-    color: #595959;
-    padding: 10px 25px 0px 25px;
-    /* background-color: aquamarine; */
+    padding: 20px 20px 0px 20px;
     margin-bottom: 10px;
+    z-index: 2;
 }
 
 .title{
     text-align: center;
-    font-size: clamp(1.5rem, 4cqi, 2.5rem);
+    font-size: clamp(1.5rem, 4cqi, 2rem);
 }
 
 .logo img {
-    width: clamp(47px, 8vw, 141px);
+    width: clamp(47px, 8vw, 64px);
     height: auto;
 }
 
 .back_btn {
-    width: clamp(30px, 8vw, 90px);
+    width: clamp(30px, 8vw, 64px);
     height: auto;
     aspect-ratio: 1/1;
-    background-color: #4d4d4d43;
-    /* color: black; */
+    background-color: #DE6900;
     display: flex;
     justify-content: center;
     align-items: center;

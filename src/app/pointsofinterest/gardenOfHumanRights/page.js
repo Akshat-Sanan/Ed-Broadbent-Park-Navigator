@@ -4,6 +4,8 @@ import InformationSect from "@/app/ui/InformationSect/InformationSect";
 import PoiFooter from "@/app/ui/PoiFooter/PoiFooter";
 import PoiSlide from "@/app/ui/PoiSlide/PoiSlide";
 import SliderButtons from "@/app/ui/SliderButtons/SliderButtons";
+import SliderDots from "@/app/ui/SliderDots/SliderDots";
+
 import styles from '../page.module.css';
 
 
@@ -36,7 +38,7 @@ export default function HumanRightsPage() {
 
     return (
         <>
-            <PoiSlide imgSrc={images[currentIndex].src} imgAlt={images[currentIndex].alt}>
+            <PoiSlide imgSrc={images[currentIndex].src} imgAlt={images[currentIndex].altm} dotsLength={images.length} dotsIndex={currentIndex}>
                 <InformationSect header={'GARDEN OF HUMAN RIGHTS'} body={images[currentIndex].body} audioSrc={images[currentIndex].audioSrc} />
             </PoiSlide>
             <SliderButtons currentIndex={currentIndex} setCurrentIndex={setCurrentIndex} images={images} />

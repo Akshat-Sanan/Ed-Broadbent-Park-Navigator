@@ -105,8 +105,8 @@ a {
 .mapWrapper {
 	/* width: 100% !important;
 	height: 100% !important; */
-	cursor: grab;
-	z-index: -10;
+	/* cursor: grab; */
+	/* z-index: 10; */
 	height: 100dvh;
 	overflow: hidden;
 }
@@ -119,12 +119,14 @@ a {
 	gap: 10px;
 	align-items: stretch;
 	padding: 1rem;
+	z-index: 999999;
 }
 
 .mainLogo {
 	position: absolute;
 	top: 30px;
 	right: 30px;
+	z-index: 999999;
 }
 
 .btn {
