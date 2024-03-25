@@ -1,13 +1,10 @@
-
-export default function InfoLayout({
-    children, // will be a page or nested layout
-}) {
+import PoiHeader from "../ui/PoiHeader/PoiHeader";
+import styles from "./info.module.css"
+export default function InfoLayout({ children }) {
     return (
-        <section>
-            {/* Include shared UI here e.g. a header or sidebar */}
-            <nav></nav>
-
+        <main className={styles.main}>
+            <PoiHeader />
             {children}
-        </section>
-    )
+        </main>
+    );
 }

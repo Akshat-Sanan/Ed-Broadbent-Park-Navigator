@@ -209,7 +209,7 @@ const pointsOfInterest = [
 		pages: [
 			{
 				type: "information",
-				bannerImage: "./assets/images/park1.png",
+				bannerImage: "/assets/images/park1.png",
 				alt: "park sign with 3 flags",
 				audio: "./assets/audio/ParkN1.mp3",
 				body:
@@ -218,7 +218,7 @@ const pointsOfInterest = [
 			},
 			{
 				type: "information",
-				bannerImage: "public/assets/images/park2.png",
+				bannerImage: "/assets/images/park2.png",
 				alt: "birds eye view of the park",
 				audio: "public/assets/audio/ParkN2.mp3",
 				body:
@@ -226,10 +226,15 @@ const pointsOfInterest = [
 				arLink: "",
 			},
 			{
+				type: "information",
+				bannerImage: "/assets/images/park2.png",
+				alt: "birds eye view of the park",
+			},
+			{
 				type: "gallery",
 				images: [
 					{
-						imgPath: "public/assets/images/park3.png",
+						imgPath: "/assets/images/park3.png",
 						alt: "a row of people holding a yellow ribbon",
 					},
 					{
