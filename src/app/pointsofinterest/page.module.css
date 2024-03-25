@@ -17,7 +17,7 @@ background-size: cover; */
 
 .pointsOfInterest {
     height: 100vh;
-    background-image: url(/assets/pois/poi_background.png);
+    background-image: url(/assets/poi_background.png);
     background-position: center;
     background-position: center center;
     background-repeat: no-repeat;
