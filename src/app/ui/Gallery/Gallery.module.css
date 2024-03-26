@@ -3,7 +3,7 @@
     /* Custom Properties */
     --background: #FFFFFF;
     --orange: #FF7A00;
-    --nonActive:#A5A5A5;
+    --nonActive: #A5A5A5;
     --defaultText: #000;
     --buttonText: #fff;
 
@@ -40,7 +40,7 @@
     align-items: center;
     justify-content: center;
     /* background-color: tomato; */
-    
+
 }
 
 .image {
@@ -52,10 +52,13 @@
 .galleryTitle {
     font-size: 16px;
     font-weight: 700;
-    line-height:21.79px;
+    line-height: 21.79px;
     text-transform: uppercase;
     text-align: center;
+
+    margin-top: 80px;
 }
+
 /* Content Container */
 .contentContainer {
     display: flex;

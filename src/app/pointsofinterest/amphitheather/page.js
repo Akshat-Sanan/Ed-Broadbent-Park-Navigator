@@ -4,36 +4,24 @@ import InformationSect from "@/app/ui/InformationSect/InformationSect";
 import PoiFooter from "@/app/ui/PoiFooter/PoiFooter";
 import PoiSlide from "@/app/ui/PoiSlide/PoiSlide";
 import SliderButtons from "@/app/ui/SliderButtons/SliderButtons";
+import poiData from "@/app/lib/poiData.js";
 import styles from '../page.module.css';
 
 
 export default function AmphitheaterPage() {
 
-    const images = [
-        {
-            src: '/assets/pois/amphitheather/amphitheather_1.png',
-            alt: 'Amphitheather',
-            body: 'Welcome to Ed Broadbent Waterfront Park\'s Amphitheater, a haven of nature and culture. Find your seat and immerse yourself in the magic of live performances and shared moments',
-            audioSrc: '/assets/music/amphitheater_1.mp3'
-        },
-        {
-            src: '/assets/pois/amphitheather/amphitheather_2.png',
-            alt: 'Amphitheather 2',
-            body: "Experience the beauty of our accessible amphitheater, designed for everyone. It's a space where diverse performances and connections flourish, embracing the essence of community.",
-            audioSrc: '/assets/music/amphitheater_1.mp3'
-        },
-    ];
+    const info = poiData[0].pages.filter(page => page.type === 'information');
 
 
     const [currentIndex, setCurrentIndex] = useState(0);
 
     return (
         <>
-            <PoiSlide className={styles.slide} imgSrc={images[currentIndex].src} imgAlt={images[currentIndex].alt} dotsIndex={currentIndex} dotsLength={images.length}>
-                <InformationSect header={'AMPHITHEATER'} body={images[currentIndex].body} audioSrc={images[currentIndex].audioSrc} />
+            <PoiSlide className={styles.slide} imgSrc={info[currentIndex].bannerImage} imgAlt={info[currentIndex].alt} dotsIndex={currentIndex} dotsLength={info.length}>
+                <InformationSect header={poiData[0].title} body={info[currentIndex].body} audioSrc={info[currentIndex].audio} />
             </PoiSlide>
-            <SliderButtons currentIndex={currentIndex} setCurrentIndex={setCurrentIndex} images={images} />
-            <PoiFooter hasGallery />
+            <SliderButtons currentIndex={currentIndex} setCurrentIndex={setCurrentIndex} info={info} />
+            <PoiFooter hasGallery galleryLink={'/pointsofinterest/amphitheather/amphitheatherGallery'} />
         </>
     );
 }

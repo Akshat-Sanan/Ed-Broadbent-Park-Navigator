@@ -1,11 +1,7 @@
 import React, { useState } from "react";
 import styles from "./sliderButtons.module.css";
 
-export default function SliderButtons({
-  currentIndex,
-  setCurrentIndex,
-  info,
-}) {
+export default function SliderButtons({ currentIndex, setCurrentIndex, info }) {
   const nextImage = () => {
     setCurrentIndex(currentIndex + 1);
   };
