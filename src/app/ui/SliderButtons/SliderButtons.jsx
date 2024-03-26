@@ -1,11 +1,7 @@
 import React, { useState } from "react";
 import styles from "./sliderButtons.module.css";
 
-export default function SliderButtons({
-  currentIndex,
-  setCurrentIndex,
-  images,
-}) {
+export default function SliderButtons({ currentIndex, setCurrentIndex, info }) {
   const nextImage = () => {
     setCurrentIndex(currentIndex + 1);
   };
@@ -16,7 +12,7 @@ export default function SliderButtons({
 
   return (
     <>
-      {currentIndex < images.length - 1 && (
+      {currentIndex < info.length - 1 && (
         <button className={styles.next_button} onClick={nextImage}>
           <img src={"/assets/slider_arrow.png"} />
         </button>
