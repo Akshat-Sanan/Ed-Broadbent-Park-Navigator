@@ -231,6 +231,11 @@ const pointsOfInterest = [
 				arLink: "",
 			},
 			{
+				type: "information",
+				bannerImage: "/assets/images/park2.png",
+				alt: "birds eye view of the park",
+			},
+			{
 				type: "gallery",
 				images: [
 					{
