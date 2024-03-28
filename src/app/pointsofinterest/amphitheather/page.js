@@ -1,10 +1,10 @@
 "use client";
 import React, { useState } from "react";
-import InformationSect from "@/app/ui/InformationSect/InformationSect";
-import PoiFooter from "@/app/ui/PoiFooter/PoiFooter";
-import PoiSlide from "@/app/ui/PoiSlide/PoiSlide";
-import SliderButtons from "@/app/ui/SliderButtons/SliderButtons";
-import poiData from "@/app/lib/poiData.js";
+import InformationSect from "@/ui/InformationSect/InformationSect";
+import PoiFooter from "@/ui/PoiFooter/PoiFooter";
+import PoiSlide from "@/ui/PoiSlide/PoiSlide";
+import SliderButtons from "@/ui/SliderButtons/SliderButtons";
+import poiData from "@/lib/poiData.js";
 import styles from "../page.module.css";
 
 export default function AmphitheaterPage() {

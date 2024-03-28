@@ -1,4 +1,4 @@
-import AR from "@/app/ui/AR/AR";
+import AR from "@/ui/AR/AR";
 
 export default function Page() {
 	return (

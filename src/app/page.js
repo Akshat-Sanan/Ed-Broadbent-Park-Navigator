@@ -1,12 +1,12 @@
 import styles from "./page.module.css";
 import Link from "next/link";
-import Map from "./ui/Map/Map";
+import Map from "../ui/Map/Map";
 import Image from "next/image";
 
 export default function Home() {
 	return (
 		<main className={styles.appBody}>
-			{/* <Map /> */}
+			<Map />
 			<Image
 				className='mainLogo'
 				src='/assets/header_logo.svg'

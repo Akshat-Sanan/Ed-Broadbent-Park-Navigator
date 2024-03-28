@@ -1,5 +1,5 @@
-import Gallery from "@/app/ui/Gallery/Gallery";
-import poiData from "@/app/lib/poiData.js";
+import Gallery from "@/ui/Gallery/Gallery";
+import poiData from "@/lib/poiData.js";
 
 export default function gardenOfHumanRightsrGalleryPage() {
 

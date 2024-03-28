@@ -1,4 +1,4 @@
-import Gallery from "@/app/ui/Gallery/Gallery";
+import Gallery from "@/ui/Gallery/Gallery";
 
 export default function edBroadBentGalleryPage(){
     return <>
