@@ -6,12 +6,12 @@ import { TransformWrapper, TransformComponent } from "react-zoom-pan-pinch";
 import React, { useEffect, useRef } from 'react';
 import L from 'leaflet';
 import styles from "./map.module.css";
+import { useRouter } from "next/navigation";
 
 //https://bettertyped.github.io/react-zoom-pan-pinch/?path=/story/docs-introduction
 
 
 const Map = () => {
-
 	//using ref to prevent map initialising multiple times
 	const mapRef = useRef(null);
 	let mapp = null;
@@ -21,6 +21,8 @@ const Map = () => {
 		iconAnchor:   [32, 70],
 		popupAnchor:  [2,-40]
 	});
+
+	const router = useRouter();
 
 	useEffect(() => {
 		// setting the map view and only once
@@ -111,7 +113,8 @@ const Map = () => {
 			}).addTo(map);
 			marker.bindPopup(popupContent);
 			marker.on('click', () => {
-				window.location.href = link;
+				// window.location.href = link;
+				router.push(link);
 			});
 		};
 
