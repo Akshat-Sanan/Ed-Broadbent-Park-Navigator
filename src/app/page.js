@@ -6,7 +6,7 @@ import Image from "next/image";
 export default function Home() {
 	return (
 		<main className={styles.appBody}>
-			{typeof(window) ? <Map /> : undefined}
+			{typeof(window) !== "undefined" ? <Map /> : undefined}
 			<Image
 				className='mainLogo'
 				src='/assets/header_logo.svg'
