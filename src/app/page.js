@@ -2,11 +2,18 @@ import styles from "./page.module.css";
 import Link from "next/link";
 import Map from "../ui/Map/Map";
 import Image from "next/image";
+import { useEffect, useState } from "react";
 
 export default function Home() {
+	const [renderMap, setRenderMap] = useState(false);
+	useEffect(()=>{
+		if(typeof(window) !== "undefined"){
+			setRenderMap(true);
+		}
+	})
 	return (
 		<main className={styles.appBody}>
-			{typeof(window) !== "undefined" ? <Map /> : undefined}
+			{renderMap ? <Map /> : undefined}
 			<Image
 				className='mainLogo'
 				src='/assets/header_logo.svg'
