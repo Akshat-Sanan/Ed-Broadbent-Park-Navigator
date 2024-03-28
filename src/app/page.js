@@ -1,13 +1,23 @@
+"use client";
 import styles from "./page.module.css";
 import Link from "next/link";
 import Map from "../ui/Map/Map";
 import Image from "next/image";
+import { useEffect, useState } from "react";
 
 export default function Home() {
+	const [renderMap, setRenderMap] = useState(false);
+	useEffect(()=>{
+		if(typeof(window) !== "undefined"){
+			setRenderMap(true);
+			console.log(window);
+			console.log(typeOf(window));
+		}
+	}, [window])
 
 	return (
 		<main className={styles.appBody}>
-			<Map />
+			{ renderMap ? <Map /> : null}
 			<Image
 				className='mainLogo'
 				src='/assets/header_logo.svg'

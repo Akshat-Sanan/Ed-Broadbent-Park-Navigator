@@ -12,8 +12,7 @@ import { useRouter } from "next/navigation";
 
 
 const Map = () => {
-	if(typeof window !== "undefined"){
-		//using ref to prevent map initialising multiple times
+	//using ref to prevent map initialising multiple times
 	const mapRef = useRef(null);
 	let mapp = null;
 	let navigatorIcon = L.icon({
@@ -124,9 +123,6 @@ const Map = () => {
 			<div id="map" className={styles.map}></div>
 		</section>
 	);
-	}else{
-		return <></>
-	}
 };
 
 export default Map;
