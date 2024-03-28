@@ -17,7 +17,7 @@ export default function Home() {
 
 	return (
 		<main className={styles.appBody}>
-			<Map />
+			{ renderMap ? <Map /> : null}
 			<Image
 				className='mainLogo'
 				src='/assets/header_logo.svg'
