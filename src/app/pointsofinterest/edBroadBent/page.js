@@ -6,7 +6,7 @@ import PoiSlide from "@/app/ui/PoiSlide/PoiSlide";
 import SliderButtons from "@/app/ui/SliderButtons/SliderButtons";
 import poiData from "@/app/lib/poiData.js";
 
-export default function edBroadBentPage() {
+export default function EdBroadBentPage() {
 	const info = poiData[3].pages;
 
 	const [currentIndex, setCurrentIndex] = useState(0);

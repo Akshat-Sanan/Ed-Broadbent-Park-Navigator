@@ -6,7 +6,7 @@ import PoiSlide from "@/app/ui/PoiSlide/PoiSlide";
 import SliderButtons from "@/app/ui/SliderButtons/SliderButtons";
 import poiData from "@/app/lib/poiData.js";
 
-export default function indigenousGardenPage() {
+export default function IndigenousGardenPage() {
 	const info = poiData[1].pages.filter((page) => page.type === "information");
 
 	const [currentIndex, setCurrentIndex] = useState(0);
