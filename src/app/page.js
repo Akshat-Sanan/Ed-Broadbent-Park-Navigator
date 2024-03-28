@@ -1,3 +1,4 @@
+"use client";
 import styles from "./page.module.css";
 import Link from "next/link";
 import Map from "../ui/Map/Map";
@@ -13,7 +14,7 @@ export default function Home() {
 			console.log(typeOf(window));
 		}
 	}, [window])
-	
+
 	return (
 		<main className={styles.appBody}>
 			<Map />
