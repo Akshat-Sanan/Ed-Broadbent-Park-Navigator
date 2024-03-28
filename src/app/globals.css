@@ -87,7 +87,6 @@ body {
 body {
 	position: relative;
 	font-family: Open Sans;
-	max-width: 600px;
 	margin-inline: auto;
 }
 
@@ -146,7 +145,6 @@ a {
 }
 
 main {
-	height: 100dvh;
 	background-color: white;
 }
 
@@ -186,7 +184,6 @@ main {
 .pointsOfInterest p {
 	position: absolute;
 	bottom: 30px;
-
 	width: 100%;
 }
 

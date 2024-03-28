@@ -1,12 +1,8 @@
-.article img {
+.sliderImg {
     width: 100%;
     position: relative;
 }
 
 .topWrapper{
     position: relative;
-}
-
-.article {
-    height: 100vh;
 }
