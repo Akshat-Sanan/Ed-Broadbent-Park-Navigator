@@ -14,7 +14,7 @@ export default function Home() {
 			<MovingMap />
 			<Image
 				className='mainLogo'
-				src='/assets/header_logo.svg'
+				src={`${process.env.NODE_ENV === "production" ? nextConfig.basePath : ""}/assets/header_logo.svg`}
 				alt='logo'
 				width={51.76}
 				height={61}

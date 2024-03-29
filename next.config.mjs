@@ -3,7 +3,8 @@
 const nextConfig = {
   output: "export",
   basePath: process.env.NODE_ENV === "production" ? "/teaching-city-broadbent-park" : "",
-  distDir: './out'
+  distDir: './out',
+  trailingSlash: true
 };
 
 export default nextConfig;
