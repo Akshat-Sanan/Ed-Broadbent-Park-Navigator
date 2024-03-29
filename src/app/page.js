@@ -6,18 +6,19 @@ import Image from "next/image";
 import { useEffect, useState } from "react";
 
 export default function Home() {
-	const [renderMap, setRenderMap] = useState(false);
-	useEffect(()=>{
-		if(typeof(window) !== "undefined"){
-			setRenderMap(true);
-			console.log(window);
-			console.log(typeOf(window));
-		}
-	}, [window])
+	// const [renderMap, setRenderMap] = useState(false);
+	// useEffect(()=>{
+	// 	if(typeof(window) !== "undefined"){
+	// 		setRenderMap(true);
+	// 		console.log(window);
+	// 		console.log(typeOf(window));
+	// 	}
+	// }, [window])
 
 	return (
 		<main className={styles.appBody}>
-			{ renderMap ? <Map /> : null}
+			{/* { renderMap ? <Map /> : null} */}
+			<Map/>
 			<Image
 				className='mainLogo'
 				src='/assets/header_logo.svg'
