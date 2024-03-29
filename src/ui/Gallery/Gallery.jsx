@@ -12,12 +12,7 @@ import styles from "./Gallery.module.css";
 import PoiHeader from "../PoiHeader/PoiHeader";
 import PoiFooter from "../PoiFooter/PoiFooter";
 
-export default function Gallery({
-  header = "",
-  images = [],
-  backPath = "",
-  numberOfImages = "",
-}) {
+export default function Gallery({ header = "", images = [], backPath = "", numberOfImages = "", arLink}) {
   const [selectedImage, setSelectedImage] = useState(images[0]);
   const [isFullScreen, setIsFullScreen] = useState(false);
 
@@ -66,7 +61,7 @@ export default function Gallery({
           </div>
         </>
       )}
-      <PoiFooter />
+      <PoiFooter arLink={arLink}/>
     </div>
   );
 }
