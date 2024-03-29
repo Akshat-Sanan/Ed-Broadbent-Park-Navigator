@@ -22,13 +22,13 @@ export default function Home() {
 			<section className='menu'>
 				<Link href='/pointsofinterest' className=''>
 					<button className='btn orange'>
-						<Image src='/point_of_interest.svg' alt='logo' width={50} height={50} />
+						<Image src={`${process.env.NODE_ENV === "production" ? nextConfig.basePath : ""}/point_of_interest.svg`} alt='Points of interest page button' width={50} height={50} />
 					</button>
 				</Link>
 
 				<Link href='/info'>
 					<button className='btn orange'>
-						<Image src='/info.svg' alt='logo' width={50} height={50} />
+						<Image src={`${process.env.NODE_ENV === "production" ? nextConfig.basePath : ""}/info.svg`} alt='Info page button' width={50} height={50} />
 					</button>
 				</Link>
 			</section>

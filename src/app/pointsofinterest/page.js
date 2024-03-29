@@ -4,7 +4,7 @@ import styles from "./page.module.css";
 export default function Page() {
 	return (
 		<>
-			<img src={`/assets/poi_background.png`} className={styles.mapBackground}/>
+			<img src={`${process.env.NODE_ENV === "production" ? nextConfig.basePath : ""}/assets/poi_background.png`} className={styles.mapBackground}/>
 			<ul className={styles.pointsOfInterest}>
 				<Link href='/pointsofinterest/edBroadBent'>
 					<li className={`${styles.pointOfInterest} ${styles.first}`}>
