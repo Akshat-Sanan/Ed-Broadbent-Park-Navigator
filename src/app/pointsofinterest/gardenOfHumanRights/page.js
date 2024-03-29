@@ -4,7 +4,7 @@ import InformationSect from "@/ui/InformationSect/InformationSect";
 import PoiFooter from "@/ui/PoiFooter/PoiFooter";
 import PoiSlide from "@/ui/PoiSlide/PoiSlide";
 import SliderButtons from "@/ui/SliderButtons/SliderButtons";
-import poiData from "@/lib/poiData.js";
+import poiData, { basePath } from "@/lib/poiData.js";
 
 export default function HumanRightsPage() {
 	const info = poiData[2].pages.filter((page) => page.type === "information");
@@ -31,11 +31,9 @@ export default function HumanRightsPage() {
 				info={info}
 			/>
 			<PoiFooter
-				arLink={"/pointsofinterest/gardenOfHumanRights/ar"}
+				arLink={`${basePath}/pointsofinterest/gardenOfHumanRights/ar`}
 				hasGallery
-				galleryLink={
-					"/pointsofinterest/gardenOfHumanRights/gardenOfHumanRightsGallery"
-				}
+				galleryLink={`${basePath}/pointsofinterest/gardenOfHumanRights/gardenOfHumanRightsGallery`}
 			/>
 		</>
 	);

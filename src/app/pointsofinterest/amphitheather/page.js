@@ -4,7 +4,7 @@ import InformationSect from "@/ui/InformationSect/InformationSect";
 import PoiFooter from "@/ui/PoiFooter/PoiFooter";
 import PoiSlide from "@/ui/PoiSlide/PoiSlide";
 import SliderButtons from "@/ui/SliderButtons/SliderButtons";
-import poiData from "@/lib/poiData.js";
+import poiData, { basePath } from "@/lib/poiData.js";
 import styles from "../page.module.css";
 
 export default function AmphitheaterPage() {
@@ -33,9 +33,9 @@ export default function AmphitheaterPage() {
 				info={info}
 			/>
 			<PoiFooter
-				arLink={"/pointsofinterest/amphitheather/ar"}
+				arLink={`${basePath}/pointsofinterest/amphitheather/ar`}
 				hasGallery
-				galleryLink={"/pointsofinterest/amphitheather/amphitheatherGallery"}
+				galleryLink={`${basePath}/pointsofinterest/amphitheather/amphitheatherGallery`}
 			/>
 		</>
 	);

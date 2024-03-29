@@ -4,7 +4,7 @@ import InformationSect from "@/ui/InformationSect/InformationSect";
 import PoiFooter from "@/ui/PoiFooter/PoiFooter";
 import PoiSlide from "@/ui/PoiSlide/PoiSlide";
 import SliderButtons from "@/ui/SliderButtons/SliderButtons";
-import poiData from "@/lib/poiData.js";
+import poiData, { basePath } from "@/lib/poiData.js";
 
 export default function IndigenousGardenPage() {
 	const info = poiData[1].pages.filter((page) => page.type === "information");
@@ -31,9 +31,9 @@ export default function IndigenousGardenPage() {
 				info={info}
 			/>
 			<PoiFooter
-				arLink={"/pointsofinterest/indigenousGarden/ar"}
+				arLink={`${basePath}/pointsofinterest/indigenousGarden/ar`}
 				hasGallery
-				galleryLink={"/pointsofinterest/indigenousGarden/indigenousGardenGallery"}
+				galleryLink={`${basePath}/pointsofinterest/indigenousGarden/indigenousGardenGallery`}
 			/>
 		</>
 	);
