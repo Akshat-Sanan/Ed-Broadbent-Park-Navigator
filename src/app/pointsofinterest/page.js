@@ -1,5 +1,6 @@
 import Link from "next/link";
 import styles from "./page.module.css";
+import nextConfig from "../../../next.config.mjs";
 
 export default function Page() {
 	return (

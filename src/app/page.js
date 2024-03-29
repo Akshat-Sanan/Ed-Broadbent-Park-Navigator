@@ -2,6 +2,7 @@ import styles from "./page.module.css";
 import Link from "next/link";
 import Image from "next/image";
 import dynamic from "next/dynamic";
+import nextConfig from "../../next.config.mjs";
 
 export default function Home() {
 	const MovingMap = dynamic(()=> import("../ui/Map/Map"), {

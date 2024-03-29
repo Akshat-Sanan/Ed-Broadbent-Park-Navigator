@@ -1,6 +1,7 @@
 "use client";
 import Link from "next/link";
 import styles from "./poiHeader.module.css";
+import nextConfig from "../../../next.config.mjs";
 
 export default function PoiHeader({ path="", onBackClick, title}) {
   return (
