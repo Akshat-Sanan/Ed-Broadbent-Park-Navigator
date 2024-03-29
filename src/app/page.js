@@ -10,7 +10,7 @@ export default function Home() {
 	})
 
 	return (
-		<main className={styles.appBody}>
+		<main>
 			<MovingMap />
 			<Image
 				className='mainLogo'

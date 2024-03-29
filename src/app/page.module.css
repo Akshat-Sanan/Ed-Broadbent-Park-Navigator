@@ -4,7 +4,14 @@
   justify-content: space-between;
   align-items: center;
   padding: 6rem;
-  min-height: 100vh;
+  max-width: 536px;
+  /* min-height: 100vh; */
+}
+
+.appBody main{
+  max-width: 536px;
+  position: relative;
+  margin: auto;
 }
 
 .description {
