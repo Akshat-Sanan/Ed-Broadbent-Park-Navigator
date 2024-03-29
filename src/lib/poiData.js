@@ -1,6 +1,6 @@
 import nextConfig from "../../next.config.mjs";
 
-const basePath = process.env.NODE_ENV === "production" ? nextConfig.basePath : "";
+export const basePath = process.env.NODE_ENV === "production" ? nextConfig.basePath : "";
 
 const pointsOfInterest = [
 	// AMPHITHEATRE

@@ -30,7 +30,7 @@ export default function EdBroadBentPage() {
 				setCurrentIndex={setCurrentIndex}
 				info={info}
 			/>
-			<PoiFooter arLink={"/pointsofinterest/edBroadBent/ar"} hasGallery={false} />
+			<PoiFooter arLink={"./ar"} hasGallery={false} />
 		</>
 	);
 }
