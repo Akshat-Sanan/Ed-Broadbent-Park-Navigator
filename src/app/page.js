@@ -1,24 +1,16 @@
-"use client";
 import styles from "./page.module.css";
 import Link from "next/link";
-import Map from "../ui/Map/Map";
 import Image from "next/image";
-import { useEffect, useState } from "react";
+import dynamic from "next/dynamic";
 
 export default function Home() {
-	// const [renderMap, setRenderMap] = useState(false);
-	// useEffect(()=>{
-	// 	if(typeof(window) !== "undefined"){
-	// 		setRenderMap(true);
-	// 		console.log(window);
-	// 		console.log(typeOf(window));
-	// 	}
-	// }, [window])
+	const MovingMap = dynamic(()=> import("../ui/Map/Map"), {
+		ssr: false
+	})
 
 	return (
 		<main className={styles.appBody}>
-			{/* { renderMap ? <Map /> : null} */}
-			<Map/>
+			<MovingMap />
 			<Image
 				className='mainLogo'
 				src='/assets/header_logo.svg'
