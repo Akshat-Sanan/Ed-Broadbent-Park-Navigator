@@ -5,7 +5,7 @@
 "use client";
 
 import { useRef, useState } from 'react';
-import { MapContainer, Marker, Popup, CircleMarker, ImageOverlay, useMapEvents } from 'react-leaflet';
+import { MapContainer, Marker, Popup, CircleMarker, ImageOverlay, useMapEvents, TileLayer } from 'react-leaflet';
 import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
 import styles from './map.module.css';
