@@ -4,12 +4,13 @@
 
 "use client";
 
-import { useEffect, useRef, useState } from 'react';
-import { MapContainer, TileLayer, Marker, Popup, CircleMarker, ImageOverlay, useMapEvents } from 'react-leaflet';
+import { useRef, useState } from 'react';
+import { MapContainer, Marker, Popup, CircleMarker, ImageOverlay, useMapEvents } from 'react-leaflet';
 import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
 import styles from './map.module.css';
 import { useRouter } from 'next/navigation'
+import { basePath } from '@/lib/poiData';
 
 // this function contains deafult coords based on QR code scanned
 function getDeafultCoordinates(QR) {
@@ -56,7 +57,7 @@ const Map = () => {
 
 	// Initializing custom navigator icon
 	const navigatorIcon = L.icon({
-		iconUrl: '/assets/marker.png',
+		iconUrl: `${basePath}/assets/marker.png`,
 		iconSize: [65, 70],
 		iconAnchor: [32, 61],
 		popupAnchor: [2, -40]
@@ -134,14 +135,14 @@ const Map = () => {
 				minZoom={18}
 				maxZoom={19}
 				//forPresentation - <comment this> - this code sets the boundaries for the map view only
-				maxBounds={imageBounds}
+				// maxBounds={imageBounds}
 			>
 
 			{/* forPresentation - <uncomment this> - open street map tile, this code be used to show realtime tracking for presentation, by displaying current location, eg-college */}
 			{/* note - maxBounds property on MapContainer needs to be commented out for this to work properly, since it keeps view to image boundaries*/}
-			{/* <TileLayer
+			<TileLayer
 			url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-			/> */}
+			/>
 
 			{/* custom map image overlay */}
 			<ImageOverlay
