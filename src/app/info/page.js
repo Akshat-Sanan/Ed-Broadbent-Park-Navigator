@@ -7,7 +7,7 @@ import PoiSlide from "@/ui/PoiSlide/PoiSlide";
 import SliderButtons from "@/ui/SliderButtons/SliderButtons";
 import SliderBooking from "@/ui/SliderBooking/SliderBooking";
 import SliderDots from "@/ui/SliderDots/SliderDots";
-import poiData from "@/lib/poiData.js";
+import poiData, { basePath } from "@/lib/poiData.js";
 
 import styles from './info.module.css';
 
@@ -26,7 +26,7 @@ export default function Page() {
                 }
             </PoiSlide>
             <SliderButtons currentIndex={currentIndex} setCurrentIndex={setCurrentIndex} info={info} />     
-            <PoiFooter noAr hasGallery={currentIndex === 2? false: true} galleryLink={"/info/infoGallery"} center={currentIndex === 2? true: false}  />
+            <PoiFooter noAr hasGallery={currentIndex === 2? false: true} galleryLink={`${basePath}/info/infoGallery`} center={currentIndex === 2? true: false}  />
         </>
     );
 }
