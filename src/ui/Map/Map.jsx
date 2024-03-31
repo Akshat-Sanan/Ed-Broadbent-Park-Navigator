@@ -154,7 +154,7 @@ const Map = () => {
 			{/* creating points of interests */}
 			<CircleMarker center={[43.86879686674433, -78.8326127728734]} radius={15} >
 				<Popup>
-					<p className={styles.popup} onClick={()=>{handleMarkerClick(`${basePath}/pointsofinterest/gardenOfHumanRights`)}}>
+					<p className={styles.popup} onClick={()=>{handleMarkerClick(`/pointsofinterest/gardenOfHumanRights`)}}>
 						Visit
 						<span className={styles.popupTxt} >Garden Of Human Rights</span>
 						page
@@ -164,7 +164,7 @@ const Map = () => {
 
 			<CircleMarker center={[43.868574420057485, -78.8331032965125]} radius={15} >
 				<Popup>
-					<p className={styles.popup} onClick={()=>{handleMarkerClick(`${basePath}/pointsofinterest/amphitheather`)}}>
+					<p className={styles.popup} onClick={()=>{handleMarkerClick(`/pointsofinterest/amphitheather`)}}>
 						Visit
 						<span className={styles.popupTxt} >Amphitheather</span>
 						page
@@ -174,7 +174,7 @@ const Map = () => {
 
 			<CircleMarker center={[43.8677074404313, -78.83218554260746]} radius={15} >
 				<Popup>
-					<p className={styles.popup} onClick={()=>{handleMarkerClick(`${basePath}/pointsofinterest/edBroadBent`)}}>
+					<p className={styles.popup} onClick={()=>{handleMarkerClick(`/pointsofinterest/edBroadBent`)}}>
 						Visit
 						<span className={styles.popupTxt} >EdBroadBent</span>
 						page
