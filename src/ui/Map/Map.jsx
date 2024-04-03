@@ -74,18 +74,18 @@ const Map = () => {
 
 		//? Live Location Fetching Code ****
 		// forPresentation - <uncomment this> - this code here fetches the real time location
-		// useEffect(() => {
-		// 		if (mapRef.current) {
-		// 			mapRef.current.locate({
-		// 				setView: false,
-		// 				maxZoom: 15,
-		// 				watch: true,
-		// 				timeout: 5000,
-		// 				enableHighAccuracy: true,
-		// 				maximumAge: Infinity,
-		// 			});
-		// 		}
-		// }, []);
+		useEffect(() => {
+				if (mapRef.current) {
+					mapRef.current.locate({
+						setView: false,
+						maxZoom: 15,
+						watch: true,
+						timeout: 5000,
+						enableHighAccuracy: true,
+						maximumAge: Infinity,
+					});
+				}
+		}, []);
 
 
 		// this code handles the gps events
@@ -96,7 +96,7 @@ const Map = () => {
 					console.log("in area")
 					setPosition(e.latlng)
 					// forPresentation - <uncomment> - this code takes the map view to the current location
-					// map.flyTo(e.latlng)
+					map.flyTo(e.latlng)
 				}
 				else{
 					//! code here for out of area prompt
