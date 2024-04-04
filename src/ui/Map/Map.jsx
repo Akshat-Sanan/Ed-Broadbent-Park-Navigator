@@ -92,18 +92,18 @@ const Map = () => {
 		const map = useMapEvents({
 			locationfound(e) {
 				// this code sets the boundaries of location fetching
-				if(e.latlng.lat>=43.870622496768334 && e.latlng.lat<=43.86644892951219 || e.latlng.lng>=-78.83587688569492 && e.latlng.lng<=-78.82983352210522){
-					console.log("in area")
+				// if(e.latlng.lat>=43.870622496768334 && e.latlng.lat<=43.86644892951219 || e.latlng.lng>=-78.83587688569492 && e.latlng.lng<=-78.82983352210522){
+				// 	console.log("in area")
 					setPosition(e.latlng)
 					// forPresentation - <uncomment> - this code takes the map view to the current location
 					map.flyTo(e.latlng)
-				}
-				else{
-					//! code here for out of area prompt
-					console.log("out of area")
-					// stops the gps location fetching
-					mapRef.current.stopLocate();
-				}
+				// }
+				// else{
+				// 	//! code here for out of area prompt
+				// 	console.log("out of area")
+				// 	// stops the gps location fetching
+				// 	mapRef.current.stopLocate();
+				// }
 			},
 			locationerror(e){
 				console.log(e)
